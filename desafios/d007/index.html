@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imagem flexível</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Imagem Flexível</h1>
+    <p>Você está vendo a imagem completa? Aumente o tamanho da janela para melhorar a experiência &#x1F596;</p>
+    <picture>
+        <source media="(max-width: 400px)" srcset="imagem/messi-p.jpg" type="image/png">
+        <source media="(max-width: 750px)" srcset="imagem/messi-m.jpg" type="image/png">
+        <img src="imagem/messi-large.jpg" alt="foto-lionel-messi" type="image/png">
+    </picture>
+</body>
+</html>

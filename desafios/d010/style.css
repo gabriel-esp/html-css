@@ -1,0 +1,135 @@
+@font-face {
+    font-family: " titulos";
+    src: url(fonte/idroid.otf) format("opentype");
+}
+
+body {
+    background-color: rgb(132, 225, 173);
+    margin: initial; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header {
+    background-color: rgb(32, 113, 68);
+    padding: 5px;
+    background-image: linear-gradient(to top, rgb(14, 59, 35), rgb(48, 236, 133));
+}
+
+header > h1 {
+    text-align: center;
+    font-size: 1.2em;
+    color: white;
+}
+
+header > p {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(134, 243, 181); 
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+nav a:hover {
+    background-color: rgb(26, 126, 71);
+    border-radius: 10px; 
+    padding: 5px;
+}
+
+
+
+main {
+    background-color:white;
+    text-align: justify;
+    padding: 20px;
+    margin: 150px; 
+    margin-top: 0px;
+    box-shadow: -1px 1px 1px 1px rgba(0, 0, 0, 0.158);
+    border-radius: 0px 0px 10px 10px;
+}
+
+#principal {
+    font-family: " titulos";
+    color: rgb(14, 59, 35);
+}
+
+h2 {
+    background-image: linear-gradient(to right, rgb(197, 235, 214), rgb(255, 255, 255) );
+    font-family: " titulos";
+    color:rgb(14, 59, 35);
+    padding: 3px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(32, 113, 68);
+    font-weight: bold;
+}
+
+p {
+    text-indent: 30px;
+}
+
+section#video {
+    background-color: rgb(32, 113, 68);
+    margin-bottom: 5px; 
+}
+
+iframe {
+    display: block; 
+    margin: auto;
+    padding: 5px; 
+}
+
+
+
+
+aside {
+    border: 1px solid rgba(0, 0, 0, 0);
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.123);
+    background-color: rgb(197, 235, 214);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+aside h3 {
+    font-size: 0.9em;
+    color: white;
+    background-color: rgb(32, 113, 68);
+    font-weight: bold;
+    margin: 0px;
+    padding: 5px; 
+}
+
+.esquerda {
+    display: inline-block;
+    margin-right: 100px; 
+}
+
+.direita {
+    display: inline-block;
+}
+
+
+
+footer {
+    background-color: rgb(14, 59, 35);
+    color: white;
+    text-align: center;
+    margin: 0px;
+    padding: 5px;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    text-decoration: underline; 
+    color: black;
+}
