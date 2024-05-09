@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        td, th {
+            border: 1px solid black;
+            height: 30px;
+            padding: 5px;
+        }
+
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+            text-shadow: 1px 1px 1px black;
+        }
+
+        thead > tr > th {
+            position: sticky; /* colável */
+            top: -1px; /* irá colar na parte 0 (-1 para não ficar um mínimo espacinho na tela) */
+            background-color: grey; /* para manter um background, pois senão ficará só as palavras */
+        }
+
+        
+
+        tbody > tr:nth-child(odd) {
+            background-color: lightgray;
+            font-weight: bold;
+        }
+
+        td.num {
+            text-align: right
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!-- 
+    ANATOMIA PARA TABELAS GRANDES 
+    TABLE
+        CAPTION (título da tabela que ficará em cima da tabela)
+        THEAD (CABEÇA)
+            TR, TD, TH
+        TBODY (CORPO)
+            TR, TD, TH
+        TFOOT (RODAPÉ/PÉ)
+            TR, TD, TH
+    -->
+
+    <table>
+        <caption>População das Unidades Federativas</caption>
+
+        <thead>
+            
+            <th scope="col">Estado</th>
+            <th scope="col" style="width: 50px;">População</th>
+            <!-- scope="col" título da coluna -->
+        </thead>
+
+        <tbody>
+            <tr>
+               
+                <td>São Paulo</td>
+                <td class="num">44 441 238</td>
+            </tr>
+            <tr>
+               
+                <td>Minas Gerais</td>
+                <td class="num"class="num">20 538 718</td>
+            </tr>
+
+            <tr>
+               
+                <td>Rio de Janeiro</td>
+                <td class="num">16 054 524</td>
+            </tr>
+            <tr>
+                
+                <td>Bahia</td>
+                <td class="num">14 141 626</td>
+            </tr>
+            <tr>
+                
+                <td>Paraná</td>
+                <td class="num">11 444 380</td>
+            </tr>
+            <tr>
+               
+                <td>Rio Grande do Sul</td>
+                <td class="num">10 882 965</td>
+            </tr>
+
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th> <!--título da linha -->
+                <td class="num"><strong>117.503.451</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi quo facilis culpa perferendis pariatur laudantium corrupti, accusantium nam quia, corporis debitis, modi aliquam odio quos expedita dolorum quis ab quaerat!
+    Odit incidunt minus reiciendis corrupti. Esse ab voluptatibus voluptate fugiat nihil tempora vero atque nisi aspernatur repellat! Ex autem dolore voluptatem. Accusamus minus rerum facilis consectetur veniam dolores cupiditate velit.
+    Iure non impedit unde, architecto necessitatibus delectus adipisci vero obcaecati dolores blanditiis? Iusto accusantium officiis sapiente quos maiores earum pariatur totam itaque ipsam tempora eligendi autem, cum nostrum voluptatum. Autem?
+    Nemo, magnam? Dolores mollitia quibusdam ea sint rem rerum quam quos nihil, pariatur consequuntur nobis? Est exercitationem et illum repellat? Quas quae ullam dolore ea quasi cum illo ipsum vero!
+    Repellat corporis quia assumenda vitae ab nostrum sed dolor culpa voluptatum, aut qui libero. Explicabo dolorum, delectus deserunt cum enim natus aut sed nostrum quo sapiente, accusamus quibusdam id a!
+    Expedita, maiores aut eos hic consequatur totam eius, deserunt a sunt delectus iste adipisci architecto libero tenetur possimus ea laboriosam explicabo natus alias pariatur? Voluptatum iste reprehenderit ut beatae amet?
+    Aliquid dignissimos sed doloremque incidunt? Quasi, non suscipit. Impedit tempora deserunt assumenda pariatur, amet natus accusamus quibusdam quaerat ipsa enim magnam autem corporis incidunt quia! Quod nobis reprehenderit possimus similique.
+    Eligendi quasi quia dolore adipisci sequi natus repellat reprehenderit non est consequatur similique quod praesentium quam voluptatum ea, fuga odio aperiam ipsum suscipit minima eos provident. Suscipit ipsa et soluta.
+    Voluptatem qui rerum eveniet eaque placeat, cum, beatae cupiditate ipsum ut suscipit dolore laborum porro ullam, doloribus officia illo rem sequi hic? A quisquam velit qui ipsam fugit consequuntur nisi.
+    Eligendi adipisci qui vero vitae ut asperiores illum, nostrum aut. Voluptates ullam delectus saepe, molestiae ipsam suscipit similique ducimus officiis sit itaque? Voluptatem exercitationem maiores error nesciunt doloribus mollitia nemo.</p>
+</body>
+</html>
