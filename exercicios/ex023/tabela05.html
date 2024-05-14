@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela com dados</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 500px;
+        }
+
+        tr.primeiral {
+            background-color: rgb(94, 94, 94);
+            color: white;
+            font-weight: bold;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabela usando Dados</h1>
+
+    <table>
+        <tr class="primeiral">
+            <td>Grupo</td>
+            <td>Nomes</td>
+            <td colspan="3" style="text-align: center;">Filmes</td>
+        </tr>
+
+        <tr>
+            <td rowspan="3" style="font-weight: bold;">Mulheres</td>
+            <td>Ana Laura</td>
+            <td>Snatch</td>
+            <td>Platoon</td>
+            <td>Fury</td>
+        </tr>
+
+        <tr>
+            <td>Bruna</td>
+            <td>Interestelar</td>
+            <td>Vice</td>
+            <td>Robocop</td>
+        </tr>
+
+        <tr>
+            <td>Claudia</td>
+            <td>Boyhood</td>
+            <td>Caras Legais</td>
+            <td>Cassino</td>
+        </tr>
+
+        <tr>
+            <td rowspan="3" style="font-weight: bold;">Homens</td>
+            <td>João</td>
+            <td>Crepúsculo</td>
+            <td>Contrabando</td>
+            <td>Django Livre</td>
+        </tr>
+
+        <tr>
+            <td>Carlos</td>
+            <td>Elyshium</td>
+            <td>Lion</td>
+            <td>Looper</td>
+        </tr>
+
+        <tr>
+            <td>Bruno</td>
+            <td>Pulp Fiction</td>
+            <td>Power</td>
+            <td>Vips</td>
+        </tr>
+    </table>
+</body>
+</html>
